@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotes</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">Quotes Database</div>
+    <div class="quote-container">
+        <div class="quote-what">{{ quote.what | safe }}</div>
+        <span class="quote-who"> -- {{ quote.who | safe }}</span>
+        <span class="quote-when">(<time>{{quote.when}}</time>)</span>
+        <div class="quote-why">Context: {{ quote.why | safe }}</div>
+    </div>
+
+{% include 'footer.j2' %}
+</body>
+</html>

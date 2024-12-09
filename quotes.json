@@ -1,0 +1,18 @@
+{
+  "__help": {
+    "__what_comment": "The direct quote or URI of the non-text object to be quoted.",
+    "__when_comment": "The ISO8601 formatted time when the 'what' happened.",
+    "__who_comment": "A URI representing the entity that caused the 'what' to happen.  Do not use @names, as they are ambiguous.",
+    "__where_comment": "The location of the 'what'.  If physical, this is a GeoJSON object (RFC 7946).  If not physical (telegram message, etc), this is either the URI of the message or a suitable archival-grade backup of it.",
+    "__why_comment": "Meta-snark about the 'what' can be put here for context, either as UTF-8 text or a URI to some other 'what'."
+  },
+  "quotes": [
+    {
+      "what": "In space there is no underwriters laboratory...",
+      "when": "2024-12-09T11:49:00-08:00",
+      "who": "https://t.me/quopas",
+      "where": "https://t.me/c/1450381879/44543",
+      "why": "https://www.youtube.com/watch?v=bvim4rsNHkQ"
+    }
+  ]
+}
