@@ -35,5 +35,9 @@ def home():
 def get_quote():
     return random.choice(quotes['quotes'])
 
+@app.route('/quotes/<int:index>', methods=['GET'])
+def get_quote_by_index(index):
+    return quotes['quotes'][index]
+
 if __name__ == '__main__':
     app.run(debug=True)
