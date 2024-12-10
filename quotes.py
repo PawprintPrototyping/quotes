@@ -2,7 +2,6 @@
 import random
 import json
 import flask
-from urllib.parse import urlparse
 
 def is_uri(string):
     if string.startswith('https://'):
